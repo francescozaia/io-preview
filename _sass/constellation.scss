@@ -1,0 +1,180 @@
+.constellation__inner {
+  position: absolute;
+  color: white;
+}
+.constellation__inner--regione {
+  top: calc(50vh - 200px);
+  left: calc(50vw - 550px);
+}
+.constellation__inner--comune {
+  top: calc(50vh - 220px);
+  left: calc(50vw + 250px);
+}
+.title {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  opacity: .2;
+  position: absolute;
+}
+.title--regione {
+  top: 20px;
+  left: 0px;
+}
+.title--comune {
+  top: 20px;
+  left: 40px;
+}
+.ball {
+  width: $ball-size;
+  height: $ball-size;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -$ball-size/2;
+  margin-left: -$ball-size/2;
+  box-shadow: 0 0 16px rgba(255, 255, 255, .8);
+  &:before,
+  &:after {
+    content:"";
+    width: 48px;
+    height: 48px;
+    background:transparent;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-24px;
+    transform:scale(.1);
+    transition: none;
+  }
+  &:after {
+    transform: scale(.2);
+  }
+  &.ball--burst {
+    &:before {
+      transition:all .5s ease;
+      transform:scale(1);
+      opacity: 0;
+    }
+    &:after {
+      transition: all 1s ease;
+      transform:scale(1);
+      opacity: 0;
+    }
+  }
+}
+.ball--small {
+  width: $ball-size--small;
+  height: $ball-size--small;
+  margin-top: -$ball-size--small/2;
+  margin-left: -$ball-size--small/2;
+}
+.ball--ticket {
+  top: 20px;
+  left: 211px;
+}
+.ball--prescrizioni {
+  top: 100px;
+  left: 130px;
+}
+.ball--esenzioni {
+  top: 42px;
+  left: 279px;
+}
+.ball--referti {
+  top: 127px;
+  left: 274px;
+}
+.ball--anagrafe {
+  top: 77px;
+  left: 8px;
+}
+.ball--mensa {
+  top: 0px;
+  left: 174px;
+}
+.ball--tari {
+  top: 115px;
+  left: 115px;
+}
+.ball--multe {
+  top: 75px;
+  left: 223px;
+}
+
+.text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  position: absolute;
+}
+.text--small {
+  font-size: 12px;
+}
+.text--ticket {
+  top: 0px;
+  left: 160px;
+}
+.text--prescrizioni {
+  top: 75px;
+  left: 38px;
+}
+.text--esenzioni {
+  top: 42px;
+  left: 294px;
+}
+.text--referti {
+  top: 125px;
+  left: 292px;
+}
+.text--anagrafe {
+  top: 30px;
+  left: -60px;
+}
+.text--mensa {
+  left: 200px;
+  top: -10px;
+}
+.text--multe {
+  top: 60px;
+  left: 244px;
+}
+.text--tari {
+  top: 120px;
+  left: 80px;
+}
+.bord {
+  position: absolute;
+  height: 1px;
+  line-height: 1px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.bord--ticket {
+  width: 43px;
+  top: 29px;
+  transform: rotate(18deg);
+  left: 224px;
+}
+.bord--prescrizioni {
+  width: 80px;
+  top: 59px;
+  transform: rotate(-46deg);
+  left: 130px;
+}
+.bord--esenzioni {
+  width: 51px;
+  top: 86px;
+  transform: rotate(94deg);
+  left: 250px;
+}
+.bord--referti {
+  width: 102px;
+  top: 114px;
+  transform: rotate(-169deg);
+  left: 154px;
+}

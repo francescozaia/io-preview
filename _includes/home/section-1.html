@@ -1,0 +1,81 @@
+<div class="main-title" style="position:absolute; top: 60px; width:100vw; text-align:center; color: #FFF;">
+  <div class="row justify-content-md-center">
+    <div class="col col-md-6">
+      <span class="text-uppercase x-small">nell'estate del 2018 nasce</span>
+      <h1 style="font-weight: 400; font-size: 24px;"><img src="{{ '/assets/img/io-logo@3x.png' | relative_url }}" style="width: 32px" alt="io"/>, l'app dei servizi pubblici</h1>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex align-items-center" style="position:absolute; width:100vw; height: 100vh">
+  <div class="container staff">
+    <div class="row no-gutters">
+      <div class="col">
+        <div class="staff__line staff__line--left"></div>
+        <div class="staff__line staff__line--left"></div>
+        <div class="staff__line staff__line--left"></div>
+        <div class="staff__line staff__line--left"></div>
+        <div class="staff__line staff__line--left"></div>
+        {% for pentagram_path in site.data.pentagram.pentagram_paths %}
+          {% if pentagram_path.is_left == true %}
+          <div class="staff__path d-none d-md-block"
+               data-index="{{ forloop.index }}"
+               data-name="{{ pentagram_path.name }}"
+               data-delay="{{ pentagram_path.delay }}"
+               data-duration="{{ pentagram_path.duration }}"
+               style="{{ pentagram_path.position }}">
+            <div class="staff__note" style=""></div>
+            {{ pentagram_path.shape }}
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="col__device">
+        <div class="staff__line staff__line--white"></div>
+        <div class="staff__line staff__line--white"></div>
+        <div class="staff__line staff__line--white"></div>
+        <div class="staff__line staff__line--white"></div>
+        <div class="staff__line staff__line--white"></div></div>
+      <div class="col">
+        <div class="staff__line staff__line--right"></div>
+        <div class="staff__line staff__line--right"></div>
+        <div class="staff__line staff__line--right"></div>
+        <div class="staff__line staff__line--right"></div>
+        <div class="staff__line staff__line--right"></div>
+        {% for pentagram_path in site.data.pentagram.pentagram_paths %}
+          {% if pentagram_path.is_left != true %}
+          <div class="staff__path d-none d-md-block"
+               data-index="{{ forloop.index }}"
+               data-name="{{ pentagram_path.name }}"
+               data-delay="{{ pentagram_path.delay }}"
+               data-duration="{{ pentagram_path.duration }}"
+               style="{{ pentagram_path.position }}">
+            <div class="staff__note" style="{{pentagram_path.pin_offset}}"></div>
+            {{ pentagram_path.shape }}
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+Stelle e Costellazioni PA di sfondo
+{% endcomment %}
+<div class="galaxy">
+  <div class="galaxy__layer galaxy__layer--one" data-depth="0.2"></div>
+  <div class="galaxy__layer galaxy__layer--two" data-depth="0.3"></div>
+  <div class="galaxy__layer galaxy__layer--three" data-depth="0.6"></div>
+  <div class="constellation d-none d-md-block" data-depth="0.02">
+    {% include home/constellation-regione.html %}
+  </div>
+  <div class="constellation d-none d-md-block" data-depth="0.02">
+    {% include home/constellation-comune.html %}
+  </div>
+</div>
+
+{% comment %}
+Preload audio file
+{% endcomment %}
+<audio id="ting" src="{{ '/assets/mp3/ting.mp3' | relative_url }}" preload></audio>

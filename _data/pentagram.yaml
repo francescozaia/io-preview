@@ -1,0 +1,49 @@
+pentagram_paths:
+  - name: prescrizioni
+    shape: '<svg width="301px" height="95px" viewBox="0 0 301 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M1,0.5 L1,80 C1,87.7319865 7.2680135,94 15,94 L301,94"></path></svg>'
+    position: 'right: 0; top: -12px'
+    duration: 1000
+    is_left: true
+  - name: referti
+    shape: '<svg width="157px" height="30px" viewBox="0 0 157 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M1,0 L1,15 C1,22.7319865 7.2680135,29 15,29 L157,29"></path></svg>'
+    position: 'right: 0; top: 11px'
+    duration: 1000
+    is_left: true
+  - name: tre
+    shape: '<svg width="165px" height="202px" viewBox="0 0 165 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M1,202 C1,82.487991 1,20.1546577 1,15 C1,7.2680135 7.2680135,1 15,1 C20.1546577,1 70.1546577,1 165,1"></path></svg>'
+    position: 'right: 0; top: 81px'
+    duration: 1000
+    pin_offset: 'translateY: 202px'
+    is_left: true
+  - name: anagrafe
+    shape: '<svg width="137px" height="184px" viewBox="0 0 137 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M136.5,0 C136.5,71.8453423 136.5,163.845342 136.5,169 C136.5,176.731986 130.231986,183 122.5,183 C117.345342,183 72.8453423,183 0,183" id="anagrafe"></path></svg>'
+    position: 'left: 0; top: -61px'
+    duration: 1000
+    pin_offset: 'translateX: 132px'
+  - name: tari
+    shape: '<svg width="243px" height="108px" viewBox="0 0 243 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M243,0 C243,71.8453423 243,87.3453423 243,92.5 C243,100.231986 236.731986,106.5 229,106.5 C223.845342,106.5 72.8453423,106.5 0,106.5" id="tari"></path></svg>'
+    position: 'left: 0; top: -25px'
+    duration: 1000
+    pin_offset: 'translateX: 132px'
+  - name: multe
+    shape: '<svg width="355px" height="144px" viewBox="0 0 355 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M353.5,0 C353.5,71.8453423 353.5,123.845342 353.5,129 C353.5,136.731986 347.231986,143 339.5,143 C334.345342,143 72.8453423,143 0,143" id="multe"></path></svg>'
+    position: 'left: 0; top: -61px'
+    duration: 1000
+    pin_offset: 'translateX: 132px'
+  - name: mensa
+    shape: '<svg width="303px" height="178px" viewBox="0 0 303 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M302.5,0 C302.5,71.8453423 302.5,157.345342 302.5,162.5 C302.5,170.231986 296.231986,176.5 288.5,176.5 C283.345342,176.5 72.8453423,176.5 0,176.5" id="mensa"></path></svg>'
+    position: 'left: 0; top: -136px'
+    duration: 1000
+    pin_offset: 'translateX: 132px'
+  - name: ticket
+    shape: '<svg width="216px" height="262px" viewBox="0 0 216 262" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M0,0 L0,247.5 C0,255.231986 6.2680135,261.5 14,261.5 L215.5,261.5" id="ticket"></path></svg>'
+    position: 'right: 0; top: -98px'
+    duration: 1000
+    pin_offset: 'translateX: 132px'
+    is_left: true
+  - name: esenzioni
+    shape: '<svg width="148px" height="241px" viewBox="0 0 148 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path stroke="rgba(255, 255, 255, .25)" fill="none" d="M0,0 L0,226 C0,233.731986 6.2680135,240 14,240 L148,240" id="esenzioni"></path></svg>'
+    position: 'right: 0; top: -76px'
+    duration: 1000
+    pin_offset: 'translateX: 132px'
+    is_left: true

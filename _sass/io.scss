@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+
+body {
+  background-color: #FAFBFD;
+  font-size: 14px;
+}
+
+.navigation__slim {
+  position: fixed;
+  height: 50px;
+  display: block;
+  width: 100%;
+  z-index: 5;
+  color: #FFF;
+  top: 0;
+  background: rgba(23, 57, 102, 0);
+  transition: background .2s ease-out;
+  &.navigation__slim--blue {
+    background: rgba(23, 57, 102, 1);
+  }
+}
+
+.navigation {
+  transition: all .5s ease-out;
+  background: white;
+  z-index: -3;
+  &.navigation--top {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
+.io__icon {
+  width: 36px;
+  padding-left: 12px;
+}
+.section {
+  background-color: transparent;
+}
+.section__one {
+  background-image: url(img/sky-bg.jpg), radial-gradient(circle, rgba(12, 80, 169, 1), #173966 100%);
+  background-size: cover;
+}
+.section_seven {
+  background-color: greenyellow;
+  height: auto !important;
+  .fp-tableCell {
+    height: auto !important;
+  }
+}
+.section-wrapper {
+  position: fixed;
+  display: table;
+  margin: 0 auto;
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+.section-wrapper__inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.section-text {
+  transition: all .5s ease-in-out;
+  &.in {
+    transform: translateX(0);
+  }
+}
+.section-text--left {
+  color: $color--primary;
+  font-size: 20px;
+  line-height: 24px;
+  transform: translateX(-100%);
+  h2 {
+    font-weight: 400;
+  }
+}
+.section-text--right {
+  color: #5C6F82;
+  font-size: 20px;
+  line-height: 24px;
+  transform: translateX(100%);
+}
+.section-text__inner {
+  padding: 0 40px;
+  @media screen and (min-width: $break-large) {
+    padding: 0 80px;
+  }
+}
+
+.white {
+  background-color: #FFF;
+}
+.blue {
+  background-color: $color--primary;
+  color: #FFF;
+}
+.grey {
+  background-color: $color--grey;
+}
+.text--light-blue {
+  color: $color--light-blue;
+}
+.site-footer {
+  background-color: $color--dark-blue;
+  color: #FFF;
+}
+
+.bd-footer {
+  background-color: #455b71;
+  color: #fff;
+
+  @media screen and (min-width: $break-small) {
+    text-align: left;
+  }
+  .team-logo {
+    &--icon {
+      width: 72px
+    }
+    &--text {
+      font-size: 16px;
+      line-height: 1rem;
+      max-width: 160px;
+      text-transform: uppercase;
+    }
+  }
+  .small-prints {
+    color: #00FFF8;
+    font-weight: 600;
+  }
+}

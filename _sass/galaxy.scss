@@ -1,0 +1,17 @@
+.galaxy__layer {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.galaxy__layer--one {
+  background-image: url(img/stars-level1.png);
+}
+
+.galaxy__layer--two {
+  background-image: url(img/stars-level2.png);
+}
+
+.galaxy__layer--three {
+  background-image: url(img/stars-level3.png);
+}
