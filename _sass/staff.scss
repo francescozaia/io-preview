@@ -30,7 +30,7 @@
   width: 8px;
   height: 8px;
   margin: 1px;
-  background-color: #0BD9D3;
+  background-color: #00FFF8;
   border-radius: 50%;
   position: absolute;
   margin-top: -4px;
@@ -44,18 +44,18 @@
     height: 48px;
     background:transparent;
     border-radius: 50%;
-    border: 2px solid #0BD9D3;
+    border: 2px solid #00FFF8;
     position:absolute;
     top:50%;
     left:50%;
     margin:-24px;
     transform:scale(.1);
-    transition:all .5s ease;
+    transition:all 1s ease;
   }
   &:after {
-    border: 1px solid #0BD9D3;
+    border: 1px solid #00FFF8;
     transform: scale(.2);
-    transition: all 1s ease;
+    transition: all 2s ease;
   }
   &.staff__note--burst {
     opacity: 0;

@@ -23,7 +23,7 @@ $(function () {
                 $('[data-index="' + pathID + '"] .staff__note').addClass('staff__note--burst');
                 $('[data-index="' + pathID + '"] .staff__note').fadeTo("slow",0);
                 let audio = document.getElementById('ting');
-                // TODO audio.play();
+                audio.play();
             }
         });
 
@@ -52,48 +52,22 @@ $(function () {
         autoScrolling: false,
         'onLeave': function (index, nextIndex, direction) {
 
-            console.log(direction, index, nextIndex)
-            // Esce schermo corrente, entra schermo successivo TODO sistemare quando si salta da una sezione all'altra
-            if (direction === 'down') {
-                $('.copy__content--' + index).addClass('copy__content--in');
-                $('.copy__content--' + parseInt(index + 1, 10)).removeClass('copy__content--in');
-
-
-                //$('.device__content--' + index).addClass('device__content--left');
-                //$('.device__content--' + parseInt(index + 1, 10)).removeClass('device__content--right');
-            }
-
-            // Esce schermo corrente, entra schermo precedente
-            if (direction === 'up') {
-                $('.copy__content--' + index).addClass('copy__content--in');
-                $('.copy__content--' + parseInt(index - 1, 10)).removeClass('copy__content--in');
-
-                //$('.device__content--' + index).addClass('device__content--right');
-                //$('.device__content--' + parseInt(index - 1, 10)).removeClass('device__content--left');
-            }
-
             if (index === 1 && direction === 'down') {
                 // Squeeze the Staff
                 //$('.staff').addClass('staff--squeeze');
                 // Add a Blue background to the Slim Navigation
                 $('.navigation__slim').addClass('navigation__slim--blue');
-                // Move the Navigation to Top
-                //$('.navigation').addClass('navigation--top');
                 // Move the device down a bit to leave space for the Navigation
                 $('.device').addClass('device--down');
                 // Mute any sound
                 document.getElementById('ting').muted = true;
-                // Animate entry text
-                //$('.section-text--2').addClass('in');
                 parallaxInstance.disable();
             }
             if (index === 2 && direction === 'up') {
                 //$('.staff').removeClass('staff--squeeze');
                 $('.navigation__slim').removeClass('navigation__slim--blue');
-                //$('.navigation').removeClass('navigation--top');
                 $('.device').removeClass('device--down');
                 document.getElementById('ting').muted = false;
-                //$('.section-text--2').removeClass('in');
                 parallaxInstance.enable();
             }
 
