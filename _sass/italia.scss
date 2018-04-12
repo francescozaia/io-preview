@@ -1,10 +1,14 @@
 .italia {
-  position: absolute;
-  width: 50vw;
-  height: 100vh;
-  background-color: #E6E9F2;
-  left: 50%;
-  margin-left: -25vw;
+  display: none;
+  @media screen and (min-width: $grid-breakpoints-lg) {
+    position: absolute;
+    width: 70vw;
+    height: 100vh;
+    background-color: #E6E9F2;
+    left: 50%;
+    margin-left: -35vw;
+    z-index: -5;
+  }
 }
 .italia__dot {
   position: absolute;

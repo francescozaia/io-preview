@@ -5,6 +5,13 @@ body {
   font-size: 14px;
 }
 
+.universe {
+  height: 100vh;
+  min-height: 650px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .navigation__slim {
   position: fixed;
   height: 50px;
@@ -36,58 +43,6 @@ body {
   width: 36px;
   padding-left: 12px;
 }
-.section {
-  background-color: transparent;
-}
-.section__one {
-  background-image: url(img/sky-bg.jpg), radial-gradient(circle, rgba(12, 80, 169, 1), #173966 100%);
-  background-size: cover;
-}
-.section_seven {
-  background-color: greenyellow;
-  height: auto !important;
-  .fp-tableCell {
-    height: auto !important;
-  }
-}
-.section-wrapper {
-  position: fixed;
-  display: table;
-  margin: 0 auto;
-  width: 100vw;
-  height: calc(100vh - 100px);
-}
-.section-wrapper__inner {
-  display: table-cell;
-  vertical-align: middle;
-}
-.section-text {
-  transition: all .5s ease-in-out;
-  &.in {
-    transform: translateX(0);
-  }
-}
-.section-text--left {
-  color: $color--primary;
-  font-size: 20px;
-  line-height: 24px;
-  transform: translateX(-100%);
-  h2 {
-    font-weight: 400;
-  }
-}
-.section-text--right {
-  color: #5C6F82;
-  font-size: 20px;
-  line-height: 24px;
-  transform: translateX(100%);
-}
-.section-text__inner {
-  padding: 0 40px;
-  @media screen and (min-width: $break-large) {
-    padding: 0 80px;
-  }
-}
 
 .white {
   background-color: #FFF;
@@ -111,7 +66,7 @@ body {
   background-color: #455b71;
   color: #fff;
 
-  @media screen and (min-width: $break-small) {
+  @media screen and (min-width: $grid-breakpoints-sm) {
     text-align: left;
   }
   .team-logo {

@@ -1,14 +1,25 @@
+.constellations {
+  position:absolute;
+  width: 100%;
+  top: $margin-top;
+}
 .constellation__inner {
   position: absolute;
   color: white;
 }
 .constellation__inner--regione {
-  top: calc(50vh - 200px);
-  left: calc(50vw - 550px);
+  top: -130px;
+  left: -77px;
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    left: 14px;
+  }
 }
 .constellation__inner--comune {
-  top: calc(50vh - 220px);
-  left: calc(50vw + 250px);
+  top: -150px;
+  right: 235px;
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    right: 325px;
+  }
 }
 .title {
   font-family: 'Lora', serif;

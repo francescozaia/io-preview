@@ -1,5 +1,8 @@
 .device {
-  position: fixed;
+  position: absolute;
+  @media screen and (min-width: $grid-breakpoints-lg) {
+    position: fixed;
+  }
   width: $device-width;
   height: 491px;
   z-index:auto;
@@ -20,12 +23,14 @@
 }
 
 .device__content {
-  transition: all .5s ease-out;
+  transition: all .2s ease-out;
   position: absolute;
   width: 100%;
   opacity: 0;
+  pointer-events: none;
   &.device__content--in {
     opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -55,5 +60,12 @@
 }
 
 .col__device {
-  width: $device-width !important;
+  @media screen and (min-width: $grid-breakpoints-lg) {
+    width: $device-width !important;
+  }
+}
+.col__device__mobile {
+  width: 70%;
+  margin: 16px 15%;
+
 }
