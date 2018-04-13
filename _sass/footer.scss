@@ -1,0 +1,23 @@
+.footer {
+  background-color: #455b71;
+  color: #fff;
+
+  @media screen and (min-width: $grid-breakpoints-sm) {
+    text-align: left;
+  }
+  .team-logo {
+    &--icon {
+      width: 72px
+    }
+    &--text {
+      font-size: 16px;
+      line-height: 1rem;
+      max-width: 160px;
+      text-transform: uppercase;
+    }
+  }
+  .small-prints {
+    color: #00FFF8;
+    font-weight: 600;
+  }
+}

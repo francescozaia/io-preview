@@ -20,8 +20,11 @@ body {
   z-index: 5;
   color: #FFF;
   top: 0;
-  background: rgba(23, 57, 102, 0);
+  background: rgba(23, 57, 102, .95);
   transition: background .2s ease-out;
+  @media screen and (min-width: $grid-breakpoints-md) {
+    background: rgba(23, 57, 102, 0);
+  }
   &.navigation__slim--blue {
     background: rgba(23, 57, 102, 1);
   }
@@ -30,10 +33,16 @@ body {
 .navigation {
   transition: all .5s ease-out;
   background: white;
-  z-index: -3;
+  z-index: 100;
+
+  @media screen and (min-width: $grid-breakpoints-md) {
+    z-index: 0;
+  }
   &.navigation--top {
     position: fixed;
-    top: 50px;
+    @media screen and (min-width: $grid-breakpoints-md) {
+      top: 50px;
+    }
     right: 0;
     left: 0;
     z-index: 3;
@@ -62,26 +71,12 @@ body {
   color: #FFF;
 }
 
-.bd-footer {
-  background-color: #455b71;
-  color: #fff;
 
-  @media screen and (min-width: $grid-breakpoints-sm) {
-    text-align: left;
-  }
-  .team-logo {
-    &--icon {
-      width: 72px
-    }
-    &--text {
-      font-size: 16px;
-      line-height: 1rem;
-      max-width: 160px;
-      text-transform: uppercase;
-    }
-  }
-  .small-prints {
-    color: #00FFF8;
-    font-weight: 600;
+
+.offcanvas-collapse {
+  background-color: #FFF;
+  top: 50px;
+  &.open {
+    left: auto;
   }
 }
