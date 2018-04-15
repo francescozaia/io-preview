@@ -1,20 +1,8 @@
-
 .section {
   background-color: transparent;
   pointer-events: none;
   &.active {
     pointer-events: auto;
-  }
-}
-.section__1 {
-  background-image: url(img/sky-bg.jpg), radial-gradient(circle, rgba(12, 80, 169, 1), #173966 100%);
-  background-size: cover;
-}
-.section_7 {
-  background-color: greenyellow;
-  height: auto !important;
-  .fp-tableCell {
-    height: auto !important;
   }
 }
 .section-wrapper {
@@ -36,25 +24,21 @@
     left: 50%;
     top: 50%;
     margin-left: -50vw;
-    margin-top: -$device-height/2 + $margin-top/2;
+    margin-top: -$device-height/2 + $mt-100/2;
   }
-}
-.section-wrapper--margin-top {
-  margin-top: 39px; //TODO
 }
 .section-text {
   transition: all .5s ease-in-out;
-
   @media screen and (min-width: $grid-breakpoints-lg) {
     opacity:0;
   }
-  &.section-text__in {
+  .active & {
     opacity: 1;
     transform: translateX(0);
   }
 }
 .section-text--left {
-  color: $color--primary;
+  color: $color--light-blue;
   font-size: 16px;
   line-height: 24px;
   @media screen and (min-width: $grid-breakpoints-lg) {
@@ -82,5 +66,30 @@
   padding: 0 40px;
   @media screen and (min-width: $grid-breakpoints-xl) {
     padding: 0 80px;
+  }
+}
+
+// Exceptions
+.section__1 {
+  background-image: url(img/sky-bg.jpg), radial-gradient(circle, rgba(12, 80, 169, 1), #173966 100%);
+  background-size: cover;
+  .section-title {
+    position: absolute;
+    top: -200px;
+    @media screen and (min-width: $grid-breakpoints-md) {
+      top: -220px;
+    }
+    width: 100%;
+    text-align:center;
+    color: $color--white;
+    h1 {
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+}
+body.is-scrolled .section__2 .section-wrapper {
+  @media screen and (min-width: $grid-breakpoints-lg) {
+    margin-top: 39px;
   }
 }

@@ -1,18 +1,4 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-
-
-@import "variables";
-@import "reset";
-@import "animation";
-@import "constellation";
-@import "section";
-@import "galaxy";
-@import "italia";
-@import "device";
-@import "staff";
-@import "copy";
-@import "footer";
-@import "io";
+@import 'main';

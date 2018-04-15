@@ -1,31 +1,31 @@
-
-.staff {
+.carillon {
   transition: all 0.7s ease-out;
-  margin-top: $margin-top;
-  &.staff--squeeze {
-    // TODO
-  }
 }
 
-.staff__line {
+.carillon__inner {
+  position: relative;
+  margin-top: calc(50vh - 75px);
+}
+
+.carillon__line {
   height: 1px;
   margin: 40px 0px;
   width: 100%;
 }
 
-.staff__line--left {
+.carillon__line--left {
   background: linear-gradient(90deg, rgba(85, 132, 193, 0) 0%, #628DC5 8.59%, #5584C1 74.8%, #FFFFFF 100%);
 }
 
-.staff__line--right {
+.carillon__line--right {
   background: linear-gradient(270deg, rgba(85, 132, 193, 0) 0%, #628DC5 8.59%, #5584C1 74.8%, #FFFFFF 100%);
 }
 
-.staff__line--white {
+.carillon__line--white {
   background: #FFF;
 }
 
-.staff__note {
+.carillon__note {
   pointer-events: none;
   width: 8px;
   height: 8px;
@@ -39,34 +39,35 @@
 
   &:before,
   &:after {
-    content:"";
+    content: "";
     width: 48px;
     height: 48px;
-    background:transparent;
+    background: transparent;
     border-radius: 50%;
     border: 2px solid #00FFF8;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin:-24px;
-    transform:scale(.1);
-    transition:all 1s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -24px;
+    transform: scale(.1);
+    transition: all 1s ease;
   }
   &:after {
     border: 1px solid #00FFF8;
     transform: scale(.2);
     transition: all 2s ease;
   }
-  &.staff__note--burst {
+  &.carillon__note--burst {
     opacity: 0;
     &:before,
-    &:after{
-      transform:scale(1.5);
+    &:after {
+      transform: scale(1.5);
       opacity: 0;
     }
   }
 }
-.staff__path {
+
+.carillon__path {
   position: absolute;
   right: 0px;
 }

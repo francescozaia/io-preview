@@ -1,7 +1,6 @@
 .constellations {
   position:absolute;
   width: 100%;
-  top: $margin-top;
 }
 .constellation__inner {
   position: absolute;
@@ -16,9 +15,9 @@
 }
 .constellation__inner--comune {
   top: -150px;
-  right: 235px;
+  right: 223px;
   @media screen and (min-width: $grid-breakpoints-xl) {
-    right: 325px;
+    right: 313px;
   }
 }
 .constellation__inner--entrate {
@@ -30,13 +29,13 @@
 }
 .constellation__inner--aci {
   top: 287px;
-  right: 235px;
+  right: 252px;
   @media screen and (min-width: $grid-breakpoints-xl) {
-    right: 354px;
+    right: 342px;
   }
 }
 
 @import "constellation-title";
 @import "constellation-text";
 @import "constellation-ball";
-@import "constellation-bord";
+@import "constellation-line";
