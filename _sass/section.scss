@@ -75,10 +75,7 @@
   background-size: cover;
   .section-title {
     position: absolute;
-    top: -200px;
-    @media screen and (min-width: $grid-breakpoints-md) {
-      top: -220px;
-    }
+    margin-top: calc(-50vh + 100px); // opposto di .carillon__inner + 25px
     width: 100%;
     text-align:center;
     color: $color--white;
